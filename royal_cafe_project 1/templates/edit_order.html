@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <div class="card shadow-lg">
+    <div class="card-body">
+      <h2 class="text-center text-danger mb-4">Edit Order - {{ cafe_name }}</h2>
+
+      {% if order %}
+      <form method="POST">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Item</th>
+              <th>Price (₹)</th>
+              <th>Quantity</th>
+              <th>Subtotal (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% set prev = {} %}
+            {% for item in order["items"] %}
+              {% set _ = prev.update({ item["name"]: item["qty"] }) %}
+            {% endfor %}
+
+            {% for id, item in menu.items() %}
+            {% set old_qty = prev.get(item["name"], 0) %}
+            <tr>
+              <td>{{ item["name"] }}</td>
+              <td>{{ "%.2f"|format(item["price"]) }}</td>
+              <td>
+                <input type="number" name="qty_{{ id }}" value="{{ old_qty }}" min="0" class="form-control text-center" style="width:80px; margin:auto;">
+              </td>
+              <td>
+                {% if old_qty > 0 %}
+                  ₹{{ "%.2f"|format(item["price"] * old_qty) }}
+                {% else %}
+                  ₹0.00
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-success btn-lg">Update Order</button>
+          <a href="{{ url_for('view_orders') }}" class="btn btn-outline-dark btn-lg ms-2">Cancel</a>
+        </div>
+      </form>
+      {% else %}
+      <div class="alert alert-danger text-center">Order not found.</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

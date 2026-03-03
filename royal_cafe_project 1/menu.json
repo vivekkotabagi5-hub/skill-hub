@@ -1,0 +1,41 @@
+{
+  "1": {
+    "name": "Espresso",
+    "price": 60
+  },
+  "2": {
+    "name": "Cappuccino",
+    "price": 90
+  },
+  "3": {
+    "name": "Veg Sandwich",
+    "price": 120,
+    "images":"sandwich.jpg",
+    "available": true
+  },
+  "1762240467": {
+    "name": "Pizza",
+    "price": 79.0,
+    "images":"pizza.jpg",
+    "available": true
+  },
+  "1762240515": {
+    "name": "Milk Shake",
+    "price": 35.0,
+    "images":"milkshake.jpg",
+    "available": true
+  },
+  "1762240543": {
+    "name": "Coffee",
+    "price": 25.0,
+    "images":"coffee.jpg",
+    "available": true
+  },
+  "1762489143158": {
+    "name": "Burger",
+    "price": 147.0,
+    "images":"burger.jpg",
+    "available": true,
+    "added_at": "2025-11-07 15:19:03"
+  }
+}

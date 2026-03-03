@@ -1,0 +1,232 @@
+/* ------------------------------
+   General Page Layout
+---------------------------------*/
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #a3a2a0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------
+   Header & Navigation
+---------------------------------*/
+.site-header {
+  background: linear-gradient(90deg, #1cacdc, #208fcb);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.site-header h1 {
+  margin: 10px 0 5px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #fff;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffe;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #010000;
+}
+
+/* ------------------------------
+   Main Container
+---------------------------------*/
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------
+   Tables
+---------------------------------*/
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #b22222;
+  color: #fff;
+  font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #ffe4e1;
+}
+
+/* ------------------------------
+   Forms
+---------------------------------*/
+form {
+  margin-top: 15px;
+}
+
+input, select, button {
+  padding: 8px 10px;
+  margin: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #b22222;
+  outline: none;
+  box-shadow: 0 0 4px rgba(178,34,34,0.4);
+}
+
+button {
+  background-color: #b22222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #8b0000;
+}
+
+/* ------------------------------
+   Flash Messages
+---------------------------------*/
+.messages {
+  margin-bottom: 15px;
+}
+
+.flash {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.flash.success {
+  background-color: #e6ffe6;
+  color: #007f00;
+}
+
+.flash.error {
+  background-color: #ffe6e6;
+  color: #b00000;
+}
+
+.flash.info {
+  background-color: #e6f0ff;
+  color: #0044cc;
+}
+
+/* ------------------------------
+   Menu Grid
+---------------------------------*/
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.menu-item {
+  background: #fff8f8;
+  border: 1px solid #f2dede;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.menu-item h3 {
+  color: #8b0000;
+  margin: 5px 0;
+}
+
+/* ------------------------------
+   Footer
+---------------------------------*/
+.site-footer {
+  background: #8b0000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  border-top: 3px solid #b22222;
+}
+
+/* ------------------------------
+   Responsive Design
+---------------------------------*/
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 3px;
+    padding: 4px 8px;
+  }
+
+  .table th, .table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}

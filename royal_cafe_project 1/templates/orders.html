@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <h2 class="text-center mb-4 text-danger">All Orders - {{ cafe_name }}</h2>
+
+  {% if orders %}
+  <table class="table table-bordered text-center align-middle shadow-sm">
+    <thead class="table-dark">
+      <tr>
+        <th>Order ID</th>
+        <th>Customer</th>
+        <th>Total (₹)</th>
+        <th>Status</th>
+        <th>Payment</th>
+        <th>Created At</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for oid, o in orders.items() %}
+      <tr>
+        <td>{{ oid }}</td>
+        <td>{{ o.name }}</td>
+        <td>{{ "%.2f"|format(o.total) }}</td>
+        <td>
+          {% if o.status == "completed" %}
+          <span class="badge bg-success">Completed</span>
+          {% elif o.status == "cancelled" %}
+          <span class="badge bg-danger">Cancelled</span>
+          {% elif o.status == "edited" %}
+          <span class="badge bg-warning text-dark">Edited</span>
+          {% else %}
+          <span class="badge bg-info text-dark">Placed</span>
+          {% endif %}
+        </td>
+        <td>
+          {% if o.payment_status == "paid" %}
+          <span class="badge bg-success">Paid</span>
+          {% else %}
+          <span class="badge bg-secondary">Pending</span>
+          {% endif %}
+        </td>
+        <td>{{ o.created_at }}</td>
+        <td>
+          {% if o.status != "cancelled" %}
+          <a href="{{ url_for('edit_order', order_id=oid) }}" class="btn btn-sm btn-warning">Edit</a>
+          <a href="{{ url_for('cancel_order', order_id=oid) }}" class="btn btn-sm btn-danger">Cancel</a>
+          {% endif %}
+          <a href="{{ url_for('final_bill', order_id=oid) }}" class="btn btn-sm btn-primary">View Bill</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="alert alert-info text-center">No orders available.</div>
+  {% endif %}
+
+  <div class="text-center mt-3">
+    <a href="{{ url_for('index') }}" class="btn btn-outline-dark">Back to Home</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,630 @@
+{
+  "1762676990938": {
+    "id": "1762676990938",
+    "customer": "akash12@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      }
+    ],
+    "total": 35.0,
+    "status": "placed",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 19:29:50"
+  },
+  "1762677000687": {
+    "id": "1762677000687",
+    "customer": "akash12@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      }
+    ],
+    "total": 35.0,
+    "status": "placed",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 19:30:00"
+  },
+  "1762677075185": {
+    "id": "1762677075185",
+    "customer": "akash12@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "placed",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 19:31:15"
+  },
+  "1762677098948": {
+    "id": "1762677098948",
+    "customer": "akash12@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "placed",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 19:31:38"
+  },
+  "1762677809648": {
+    "id": "1762677809648",
+    "customer": "amar12@gmai.com",
+    "name": "amar",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 19:43:29",
+    "start_time": "2025-11-12 20:57:00",
+    "completed_at": "2025-11-12 20:57:08",
+    "wait_time": "0 mins"
+  },
+  "1762677855548": {
+    "id": "1762677855548",
+    "customer": "amar12@gmai.com",
+    "name": "amar",
+    "items": [
+      {
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      }
+    ],
+    "total": 35.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-09 19:44:15",
+    "paid_at": "2025-11-09 19:44:25",
+    "start_time": "2025-11-12 20:56:55",
+    "completed_at": "2025-11-12 20:57:15",
+    "wait_time": "0 mins"
+  },
+  "1762677964646": {
+    "id": "1762677964646",
+    "customer": "akash12@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Burger",
+        "price": 147.0,
+        "qty": 1,
+        "subtotal": 147.0
+      }
+    ],
+    "total": 147.0,
+    "status": "edited",
+    "payment_status": "paid",
+    "created_at": "2025-11-09 19:46:04",
+    "edited_at": "2025-11-09 19:47:35",
+    "paid_at": "2025-11-09 19:46:57"
+  },
+  "1762678437068": {
+    "id": "1762678437068",
+    "customer": "amar12@gmai.com",
+    "name": "amar",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "name": "Burger",
+        "price": 147.0,
+        "qty": 1,
+        "subtotal": 147.0
+      }
+    ],
+    "total": 226.0,
+    "status": "edited",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 19:53:57",
+    "edited_at": "2025-11-09 19:54:25"
+  },
+  "1762678670758": {
+    "id": "1762678670758",
+    "customer": "akash12@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "cancelled",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 19:57:50",
+    "cancelled_at": "2025-11-09 19:58:18"
+  },
+  "1762678884252": {
+    "id": "1762678884252",
+    "customer": "amar12@gmai.com",
+    "name": "amar",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 20:01:24",
+    "start_time": "2025-11-10 20:40:16",
+    "completed_at": "2025-11-10 20:40:23",
+    "wait_time": "0 mins"
+  },
+  "1762679064202": {
+    "id": "1762679064202",
+    "customer": "ningadalli26@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-09 20:04:24",
+    "paid_at": "2025-11-09 20:04:38",
+    "start_time": "2025-11-09 20:06:04",
+    "completed_at": "2025-11-09 20:06:07",
+    "wait_time": "0 mins"
+  },
+  "1762679706905": {
+    "id": "1762679706905",
+    "customer": "ningadalli26@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "pending",
+    "created_at": "2025-11-09 20:15:06",
+    "start_time": "2025-11-10 20:38:35",
+    "completed_at": "2025-11-10 20:38:46",
+    "wait_time": "0 mins"
+  },
+  "1762767268108": {
+    "id": "1762767268108",
+    "customer": "anuj12@gmail.com",
+    "name": "anuj",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "name": "Burger",
+        "price": 147.0,
+        "qty": 1,
+        "subtotal": 147.0
+      }
+    ],
+    "total": 226.0,
+    "status": "edited",
+    "payment_status": "paid",
+    "created_at": "2025-11-10 20:34:28",
+    "edited_at": "2025-11-10 20:40:42",
+    "paid_at": "2025-11-10 20:39:09"
+  },
+  "1762767676784": {
+    "id": "1762767676784",
+    "customer": "anand12@gmai.com",
+    "name": "anand",
+    "items": [
+      {
+        "name": "Burger",
+        "price": 147.0,
+        "qty": 1,
+        "subtotal": 147.0
+      }
+    ],
+    "total": 147.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-10 20:41:16",
+    "start_time": "2025-11-10 20:41:25",
+    "completed_at": "2025-11-10 20:41:29",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-10 20:41:51"
+  },
+  "1762835282661": {
+    "id": "1762835282661",
+    "customer": "ningadalli26@gmail.com",
+    "name": "Akash Patil",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "placed",
+    "payment_status": "pending",
+    "created_at": "2025-11-11 15:28:02"
+  },
+  "1762941312377": {
+    "id": "1762941312377",
+    "customer": "amar123@gmail.com",
+    "name": "Amar ",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      }
+    ],
+    "total": 114.0,
+    "status": "edited",
+    "payment_status": "paid",
+    "created_at": "2025-11-12 20:55:12",
+    "edited_at": "2025-11-12 20:59:15",
+    "paid_at": "2025-11-12 20:57:33"
+  },
+  "1763197375581": {
+    "id": "1763197375581",
+    "customer": "ajay23@gmail.com",
+    "name": "ajay",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-15 20:02:55",
+    "start_time": "2025-11-15 20:03:07",
+    "paid_at": "2025-11-15 20:03:27",
+    "completed_at": "2025-11-15 20:03:48",
+    "wait_time": "0 mins"
+  },
+  "1763710627285": {
+    "id": "1763710627285",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "name": "Coffee",
+        "price": 25.0,
+        "qty": 1,
+        "subtotal": 25.0
+      }
+    ],
+    "total": 104.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-21 18:37:07",
+    "start_time": "2025-11-21 18:42:27",
+    "paid_at": "2025-11-21 18:43:16",
+    "completed_at": "2025-11-21 18:43:31",
+    "wait_time": "1 mins"
+  },
+  "1763710673052": {
+    "id": "1763710673052",
+    "customer": "dinesh143@gmail.com",
+    "name": "Dinesh ",
+    "items": [
+      {
+        "name": "Espresso",
+        "price": 60,
+        "qty": 1,
+        "subtotal": 60
+      },
+      {
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      },
+      {
+        "name": "Coffee",
+        "price": 25.0,
+        "qty": 1,
+        "subtotal": 25.0
+      },
+      {
+        "name": "Burger",
+        "price": 147.0,
+        "qty": 1,
+        "subtotal": 147.0
+      }
+    ],
+    "total": 267.0,
+    "status": "edited",
+    "payment_status": "paid",
+    "created_at": "2025-11-21 18:37:53",
+    "edited_at": "2025-11-21 18:41:25",
+    "paid_at": "2025-11-21 18:41:43"
+  },
+  "1763711221732": {
+    "id": "1763711221732",
+    "customer": "dinesh143@gmail.com",
+    "name": "Dinesh ",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "preparing",
+    "payment_status": "pending",
+    "created_at": "2025-11-21 18:47:01",
+    "start_time": "2025-11-21 23:09:23"
+  },
+  "1763711233832": {
+    "id": "1763711233832",
+    "customer": "dinesh143@gmail.com",
+    "name": "Dinesh ",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      },
+      {
+        "name": "Coffee",
+        "price": 25.0,
+        "qty": 1,
+        "subtotal": 25.0
+      }
+    ],
+    "total": 139.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-21 18:47:13",
+    "start_time": "2025-11-21 18:47:33",
+    "completed_at": "2025-11-21 18:48:11",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-21 18:48:15"
+  },
+  "1763711362488": {
+    "id": "1763711362488",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "name": "Burger",
+        "price": 147.0,
+        "qty": 1,
+        "subtotal": 147.0
+      }
+    ],
+    "total": 147.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-21 18:49:22",
+    "start_time": "2025-11-21 22:57:21",
+    "completed_at": "2025-11-21 22:57:30",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-21 22:58:06"
+  },
+  "1763724743457": {
+    "id": "1763724743457",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "name": "Coffee",
+        "price": 25.0,
+        "qty": 1,
+        "subtotal": 25.0
+      }
+    ],
+    "total": 104.0,
+    "status": "edited",
+    "payment_status": "paid",
+    "created_at": "2025-11-21 22:32:23",
+    "start_time": "2025-11-21 22:32:44",
+    "completed_at": "2025-11-21 22:33:16",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-21 22:33:37",
+    "edited_at": "2025-11-21 22:34:00"
+  },
+  "1763725833085": {
+    "id": "1763725833085",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "item_id": "1762240467",
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-21 22:50:33",
+    "start_time": "2025-11-21 22:50:51",
+    "completed_at": "2025-11-21 22:51:12",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-21 22:51:34"
+  },
+  "1763726494151": {
+    "id": "1763726494151",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "item_id": "1762240467",
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-21 23:01:34",
+    "start_time": "2025-11-21 23:01:49",
+    "completed_at": "2025-11-21 23:02:09",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-21 23:02:24"
+  },
+  "1763761101779": {
+    "id": "1763761101779",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "item_id": "1762240467",
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      }
+    ],
+    "total": 79.0,
+    "status": "completed",
+    "payment_status": "paid",
+    "created_at": "2025-11-22 08:38:21",
+    "start_time": "2025-11-22 08:38:34",
+    "completed_at": "2025-11-22 08:38:51",
+    "wait_time": "0 mins",
+    "paid_at": "2025-11-22 08:39:04"
+  },
+  "1763766825150": {
+    "id": "1763766825150",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "name": "Milk Shake",
+        "price": 35.0,
+        "qty": 1,
+        "subtotal": 35.0
+      },
+      {
+        "name": "Coffee",
+        "price": 25.0,
+        "qty": 1,
+        "subtotal": 25.0
+      }
+    ],
+    "total": 139.0,
+    "status": "edited",
+    "payment_status": "pending",
+    "created_at": "2025-11-22 10:13:45",
+    "edited_at": "2025-11-22 10:16:06"
+  },
+  "1763767186720": {
+    "id": "1763767186720",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "items": [
+      {
+        "item_id": "1762240467",
+        "name": "Pizza",
+        "price": 79.0,
+        "qty": 1,
+        "subtotal": 79.0
+      },
+      {
+        "item_id": "1762240543",
+        "name": "Coffee",
+        "price": 25.0,
+        "qty": 1,
+        "subtotal": 25.0
+      }
+    ],
+    "total": 104.0,
+    "status": "completed",
+    "payment_status": "pending",
+    "created_at": "2025-11-22 10:19:46",
+    "start_time": "2025-11-22 10:24:23",
+    "completed_at": "2025-11-22 10:25:02",
+    "wait_time": "0 mins"
+  }
+}

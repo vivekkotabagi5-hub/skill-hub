@@ -1,0 +1,65 @@
+{
+  "1762679211229": {
+    "id": "1762679211229",
+    "order_id": "1762679064202",
+    "customer": "ningadalli26@gmail.com",
+    "name": "Akash Patil",
+    "rating": "5",
+    "comment": "this is good one cafe",
+    "submitted_at": "2025-11-09 20:06:51"
+  },
+  "1762767754211": {
+    "id": "1762767754211",
+    "order_id": "1762767676784",
+    "customer": "anand12@gmai.com",
+    "name": "anand",
+    "rating": "5",
+    "comment": "good one",
+    "submitted_at": "2025-11-10 20:42:34"
+  },
+  "1763197471404": {
+    "id": "1763197471404",
+    "order_id": "1763197375581",
+    "customer": "ajay23@gmail.com",
+    "name": "ajay",
+    "rating": "5",
+    "comment": "is one good cafe",
+    "submitted_at": "2025-11-15 20:04:31"
+  },
+  "1763711089867": {
+    "id": "1763711089867",
+    "order_id": "1763710627285",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "rating": "5",
+    "comment": "is best",
+    "submitted_at": "2025-11-21 18:44:49"
+  },
+  "1763711329673": {
+    "id": "1763711329673",
+    "order_id": "1763711233832",
+    "customer": "dinesh143@gmail.com",
+    "name": "Dinesh ",
+    "rating": "5",
+    "comment": "It is good ",
+    "submitted_at": "2025-11-21 18:48:49"
+  },
+  "1763725919043": {
+    "id": "1763725919043",
+    "order_id": "1763725833085",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "rating": "5",
+    "comment": "it is good\r\n",
+    "submitted_at": "2025-11-21 22:51:59"
+  },
+  "1763726327283": {
+    "id": "1763726327283",
+    "order_id": "1763711362488",
+    "customer": "kiran12@gmail.com",
+    "name": "Kiran ",
+    "rating": "4",
+    "comment": "best\r\n",
+    "submitted_at": "2025-11-21 22:58:47"
+  }
+}

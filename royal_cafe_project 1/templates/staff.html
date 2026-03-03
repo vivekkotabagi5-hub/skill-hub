@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-4">
+    <h2 class="text-center text-danger mb-4">Staff Dashboard - {{ cafe_name }}</h2>
+    <img src="{{ url_for('static', filename='css/pic.jpeg') }}" alt="Staff Dashboard" class="img-fluid rounded shadow mb-4">
+
+    <!-- Demo: use the uploaded demo image if available -->
+    <div class="text-center mb-3">
+      <img src="{{ url_for('demo_image') }}" alt="Staff Demo" class="img-fluid rounded shadow" style="max-height:200px;">
+    </div>
+
+    {% if orders %}
+    <table class="table table-bordered text-center align-middle shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Total (₹)</th>
+                <th>Status</th>
+                <th>Time Placed</th>
+                <th>Actions</th>
+                <th>Wait Time</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for oid, o in orders.items() %}
+            <tr>
+                <td>{{ oid }}</td>
+                <td>{{ o.name }}</td>
+                <td>{{ "%.2f"|format(o.total) }}</td>
+
+                <td>
+                    {% if o.status == "placed" %}
+                        <span class="badge bg-secondary">Pending</span>
+                    {% elif o.status == "preparing" %}
+                        <span class="badge bg-warning text-dark">Preparing</span>
+                    {% elif o.status == "completed" %}
+                        <span class="badge bg-success">Completed</span>
+                    {% endif %}
+                </td>
+
+                <td>{{ o.created_at }}</td>
+
+                <td>
+                    {% if o.status == "placed" %}
+                        <a href="#" data-url="{{ url_for('mark_order_preparing', order_id=oid) }}" class="btn btn-sm btn-primary ajax-start">Start Preparing</a>
+                    {% elif o.status == "preparing" %}
+                        <a href="#" data-url="{{ url_for('mark_order_complete', order_id=oid) }}" class="btn btn-sm btn-success ajax-complete">Mark Completed</a>
+                    {% else %}
+                        <span class="text-success">Ready ✅</span>
+                    {% endif %}
+                </td>
+
+                <td>
+                    {% if o.status == "completed" %}
+                        {{ o.wait_time or "N/A" }}
+                    {% elif o.status == "preparing" and o.start_time %}
+                        <script>
+                            const startTime{{ loop.index }} = new Date("{{ o.start_time }}").getTime();
+                            setInterval(() => {
+                                const diff = (new Date().getTime() - startTime{{ loop.index }}) / 60000;
+                                document.getElementById("wait_{{ oid }}").innerText = Math.floor(diff) + " mins";
+                            }, 60000);
+                        </script>
+                        <span id="wait_{{ oid }}">0 mins</span>
+                    {% else %}
+                        --
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% else %}
+        <div class="alert alert-info text-center mt-3">No active orders right now.</div>
+    {% endif %}
+</div>
+
+<script>
+document.addEventListener("click", function(e) {
+    if (e.target.matches(".ajax-start") || e.target.matches(".ajax-complete")) {
+        e.preventDefault();
+        let url = e.target.getAttribute("data-url");
+        if (!url) return;
+        fetch(url, {method: 'GET'})
+            .then(r => r.text())
+            .then(() => location.reload())
+            .catch(err => console.error(err));
+    }
+});
+</script>
+
+{% endblock %}

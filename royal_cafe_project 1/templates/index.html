@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Menu</h2>
+<form method="POST" action="{{ url_for('place_order') if False else url_for('place_order') }}">
+  <div class="menu-grid">
+  {% for id, item in menu.items() %}
+    <div class="menu-item">
+      <h3>{{ item.name }}</h3>
+      <p>₹{{ "%.2f"|format(item.price) }}</p>
+      <label>Qty: <input type="number" name="qty_{{ id }}" min="0" value="0"></label>
+    </div>
+  {% endfor %}
+  </div>
+  <div style="margin-top:16px;">
+    {% if session.get('customer') %}
+      <button type="submit">Place Order</button>
+    {% else %}
+      <a href="{{ url_for('customer_login') }}">Login to place order</a>
+    {% endif %}
+  </div>
+</form>
+{% endblock %}

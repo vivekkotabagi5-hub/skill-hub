@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Dashboard - {{ cafe_name }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { padding: 20px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Customer Feedbacks</h2>
+
+    {% if feedbacks %}
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr><th>Order ID</th><th>Customer</th><th>Rating</th><th>Comment</th><th>Submitted At</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+            {% for fid, fb in feedbacks.items() %}
+            <tr>
+                <td>{{ fb.order_id }}</td>
+                <td>{{ fb.name }} ({{ fb.customer }})</td>
+                <td>{{ fb.rating }}</td>
+                <td>{{ fb.comment }}</td>
+                <td>{{ fb.submitted_at }}</td>
+                <td>
+                    <a class="btn btn-sm btn-danger" href="{{ url_for('delete_feedback', fid=fid) }}" onclick="return confirm('Delete feedback?')">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No feedback available yet.</p>
+    {% endif %}
+
+    <a class="btn btn-secondary" href="{{ url_for('admin') }}">Back to Admin</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Menu</title></head>
+<body>
+  <h1>Menu</h1>
+  {% if session.customer %}
+    <p>Logged in as: {{ session.customer.name }} (ID {{ session.customer.id }})</p>
+  {% else %}
+    <p><a href="{{ url_for('customer_login') }}">Login as Customer</a></p>
+  {% endif %}
+  <div class="items">
+  {% for it in items %}
+    <div class="item">
+      <h3>{{ it.name }} - ₹{{ it.price }}</h3>
+      <img src="{{ url_for('static', filename='images/' + (it.image if it.image else 'placeholder.png')) }}" alt="{{ it.name }}" width="180" height="180"/>
+    </div>
+  {% endfor %}
+  </div>
+</body>
+</html>

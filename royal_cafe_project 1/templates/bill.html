@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Bill (Temporary)</h2>
+{% if order_items %}
+<table class="table">
+  <tr><th>Item</th><th>Price</th><th>Qty</th><th>Subtotal</th></tr>
+  {% for it in order_items %}
+  <tr>
+    <td>{{ it.name }}</td>
+    <td>₹{{ "%.2f"|format(it.price) }}</td>
+    <td>{{ it.qty }}</td>
+    <td>₹{{ "%.2f"|format(it.subtotal) }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<h3>Total: ₹{{ "%.2f"|format(total) }}</h3>
+<a href="{{ url_for('index') }}">Back to Menu</a>
+<a href="{{ url_for('confirm_order') }}">Confirm Order</a>
+<a href="{{ url_for('edit_order') }}">edit order</a>
+{% else %}
+<p>No items.</p>
+{% endif %}
+{% endblock %}

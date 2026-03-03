@@ -1,0 +1,14 @@
+{
+  "1": {
+    "name": "Espresso",
+    "price": 60
+  },
+  "2": {
+    "name": "Cappuccino",
+    "price": 90
+  },
+  "3": {
+    "name": "Veg Sandwich",
+    "price": 120
+  }
+}
