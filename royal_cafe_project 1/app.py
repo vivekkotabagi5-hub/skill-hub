@@ -8,7 +8,7 @@ from flask import (
     session, flash, jsonify, send_file
 )
 
-# Optional QR code support
+
 try:
     import qrcode
     QR_AVAILABLE = True
